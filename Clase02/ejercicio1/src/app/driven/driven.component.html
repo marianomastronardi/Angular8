@@ -1,0 +1,17 @@
+<form #formulario='ngForm' (ngSubmit)="Registrar(formulario)">
+    <h4>Registro</h4>
+    <br />
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="Nombre" #nombre name="nombre" ngModel required>
+    </div>
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="Apellido" #apellido name="apellido" ngModel>
+    </div>
+    <div class="form-group">
+      <input type="email" class="form-control" placeholder="email" #email name="email" ngModel>
+    </div>
+  </form>
+  <div *ngIf="formulario">
+    <h5>Datos enviados:</h5>
+    <pre>{{formulario.value | json}}</pre>
+  </div>
