@@ -1,0 +1,1 @@
+https://github.com/krloss86/angular.git
