@@ -1,0 +1,9 @@
+<div class="row">
+    <div class="col-12">
+        {{apellidoPaterno.edad}} - {{apellidoPaterno.apellido}}
+    </div>
+    <div class="col-12">
+        <input #valorInform type="text"/>
+        <button class="btn btn-success" (click)="informarAlPadre(valorInform.value)">Informar al padre</button>
+    </div>
+</div>

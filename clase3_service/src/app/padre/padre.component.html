@@ -1,0 +1,17 @@
+<div class="container">
+<div class="row">
+    <div class="col-6">
+        edad: {{edad}}
+    </div>
+    <div class="col-6">
+        apellido: {{apllido}}
+    </div>
+</div>
+<div class="row">
+    <div class="col-12" style="background-color: lightblue">
+        <app-hijo
+             [apellidoPaterno]="padre"
+             (aviso)="recibirAviso($event)" ></app-hijo>
+    </div>
+</div>
+</div>
